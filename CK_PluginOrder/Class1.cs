@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using Rock.Interface;
 using Rock.Container;
+using System.Data;
+using System.Collections;
+using System.Windows.Forms;
 
 namespace CK_PluginOrder
 {
@@ -77,7 +80,7 @@ namespace CK_PluginOrder
    [PlugNameAttribute("采购审批"),
    PlugQueryFormAttribute("Order_Qurey"),
    PlugWriterAttribute(""),
-   PlugQueryCmdAttribute("8b904afc-6b23-4bd7-ae33-3ce8a7f93cdf"),
+   PlugQueryCmdAttribute("75695b74-3118-4f3f-ac07-63e0e8a763c7"),
    PlugActionAttribute("采购审批"),
    PlugDescriptionAttribute("采购审批")]
     public partial class CKPlugApproveOrder : PluginNode
@@ -118,9 +121,51 @@ namespace CK_PluginOrder
         void cmdApprove_Click(object sender, EventArgs e)
         {
           //查看采购单明细,设置采购单属性到下个审批人或者回退到创建人,如果没有下个审批人.更新采购单状态都审批通过.
-           
+            IReport Ir = (IReport)iapplication.GetService(typeof(IReport));
+            IDataService idataSvr = (IDataService)iapplication.GetService(typeof(IDataService));
+            IAdapter Iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
+            string ReportTemple = (string)Iad.RunCmdnoCheck("AFunction3", new Object[] { "c0d8b9fa-2b7c-4357-a650-dea950413736" });//报表模板
+            MessageBox.Show(idataSvr.SelectedRows.Count.ToString());
+             if (idataSvr.SelectedRows.Count > 0)
+            {
+                DataRow dr;
+                string s=",";
 
+                //获取查询语句条件
+                foreach (DictionaryEntry de in idataSvr.SelectedRows)
+                {
+                    dr = (DataRow)de.Value;
+
+                    if (dr != null)
+                    {
+
+                        s += dr["F_ORDERNUMBER"].ToString().Trim() + ",";
+
+                    }
+
+
+                }
+
+                if (ReportTemple != "")
+                {
+                    DataTable dt = (DataTable)Iad.RunCmdnoCheck("AFunction2", new object[] { "select * from t_base_sql where f_key='eb1e217e-ce9b-4dbd-a35e-8a3859435f16'" });//取得主表的SQL
+
+                    if (dt != null && dt.Rows[0]["F_PurchasNo"].ToString() != "")
+                    {
+                        DataTable data = (DataTable)Iad.RunCmdnoCheck("AFunction2", new object[] { dt.Rows[0]["F_PurchasNo"].ToString().Replace("$f_id$", s) });
+                      
+                        Ir.PrintPreView(ReportTemple, Iad.GetXmlData(data));
+                    }
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("请勾采购单");
+            }
         }
+
+
 
         private void InitializeComponent()
         {
