@@ -164,7 +164,7 @@ namespace CK_PluginOrder
             Command cmdAdd = new Command("到货验收", iapplication, CommandTriger.OFF, (int)ImageType.ADD);
             Command cmdEdit = new Command("采购付款", iapplication, CommandTriger.ON, (int)ImageType.EDIT);
             Command cmdDetail = new Command("采购入库", iapplication, CommandTriger.ON, (int)ImageType.PRINT01);
-            // Command cmdPrint = new Command("人员查看", iapplication, CommandTriger.ON, (int)ImageType.PRINT02);
+            // Command cmdPrint = new Command("sdfdis", iapplication, CommandTriger.ON, (int)ImageType.PRINT02);
             cmdAdd.Click += new EventHandler(cmdAdd_Click);
             cmdEdit.Click += new EventHandler(cmdEdit_Click);
             cmdDetail.Click += new EventHandler(cmdDetail_Click);
@@ -189,7 +189,6 @@ namespace CK_PluginOrder
         }
         void cmdPrint_Click(object sender, EventArgs e)
         {
-
             //displayReport("f292a161-04fd-416a-8275-d4e4b6f35ffb", "71e05c88-7210-4a99-91a8-8e6247fe8baa");
         }
         void cmdSetting_Click(object sender, EventArgs e)
