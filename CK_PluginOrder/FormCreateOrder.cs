@@ -24,6 +24,7 @@ namespace CK_PluginOrder
             IRight ir = (IRight)iapplication.GetService(typeof(IRight));
             textBox1.Text = ir.UserName;
             textBox2.Text = ir.AgencyName;
+            myOrderNumber.FieldValue = "CG" + ir.UserId + DateTime.Now.ToString("yyMMddhhmmss");
             myEditTreeView1.MyItemCheck += new EventHandler(myEditTreeView1_MyItemCheck);
             listView1.Columns.Add("商品ID", 60, HorizontalAlignment.Left);
             listView1.Columns.Add("商品编码", 60, HorizontalAlignment.Left);
@@ -56,7 +57,10 @@ namespace CK_PluginOrder
             {
                 MyDataView mdv = new MyDataView();
                 mdv.SetKey("f_id");
-                mdv.SelectedRows.Add("f_id", ntable.Rows[0]);
+                foreach (DataRow dr in ntable.Rows)
+                {
+                    mdv.SelectedRows.Add(dr["f_id"].ToString(), dr);
+                }
                 mdv.iapplication = iapplication;
                 FormProductInfo fpdi = new FormProductInfo(iapplication, mdv, listView1, ntable, myEditTextBox2);
                 fpdi.ShowForm(FormType.Edit);
@@ -78,7 +82,7 @@ namespace CK_PluginOrder
                
                 Fields2Xml f2x = new Fields2Xml("CK_ORDERPRODUCT");//定义要修改的表名
                 //f2x.addField("F_IP", SqlDbType.VarChar, dr["F_IP"].ToString(), true, false);//指定主键值,没指定主键将添加
-                f2x.addField("F_PurchasNo", SqlDbType.VarChar, myEditTextBox1.FieldValue.ToString(), false, false);//定义要修改的字段和值
+                f2x.addField("F_PurchasNo", SqlDbType.VarChar, myOrderNumber.FieldValue.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_PRODUCTID", SqlDbType.Int, listView1.Items[i].SubItems[0].Text.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_COUNT", SqlDbType.Int, listView1.Items[i].SubItems[3].Text.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_UnitPrice", SqlDbType.Int, listView1.Items[i].SubItems[5].Text.ToString(), false, false);//定义要修改的字段和值
@@ -100,6 +104,11 @@ namespace CK_PluginOrder
         private void butCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
