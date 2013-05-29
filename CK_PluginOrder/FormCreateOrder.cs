@@ -25,13 +25,6 @@ namespace CK_PluginOrder
             textBox1.Text = ir.UserName;
             textBox2.Text = ir.AgencyName;
             myEditTreeView1.MyItemCheck += new EventHandler(myEditTreeView1_MyItemCheck);
-            listView1.Columns.Add("商品ID", 60, HorizontalAlignment.Left);
-            listView1.Columns.Add("商品编码", 60, HorizontalAlignment.Left);
-            listView1.Columns.Add("商品名称", 60, HorizontalAlignment.Left);
-            listView1.Columns.Add("采购数量", 60, HorizontalAlignment.Left);
-            listView1.Columns.Add("单位", 60, HorizontalAlignment.Left);
-            listView1.Columns.Add("商品单价", 60, HorizontalAlignment.Left);
-            listView1.Columns.Add("小计金额", 60, HorizontalAlignment.Left);
             base.AfterShowForm();
         }
 
@@ -86,21 +79,38 @@ namespace CK_PluginOrder
                 f2x.addField("F_PRODUCT", SqlDbType.VarChar, listView1.Items[i].SubItems[2].Text.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_CODE", SqlDbType.VarChar, listView1.Items[i].SubItems[1].Text.ToString(), false, false);//定义要修改的字段和值
                 String retxml = (string)Iad.RunCmdnoCheck("AFunction1", new object[] { f2x.getDataXml(FormType.Insert) });//指定执行类型,执行
-                f2x.ReturnXmlAnalsy(retxml);//返回的执行结果;
-                MessageBox.Show(retxml);
                 amount =amount+ Int32.Parse(listView1.Items[i].SubItems[6].Text.ToString());
 
             }
-            MessageBox.Show(amount.ToString());
             this.myEditTextBox2.FieldValue = amount;
+            this.myEditTextBox4.FieldValue = 0;//流程状态,审批中
             this.Commit();
             this.listView1.Clear();
+            this.textBox3.Text = "";
         }
 
         private void butCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void myEditComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            myEditTextBox3.FieldValue +=myEditComboBox2.FieldValue.ToString()+",";
+            textBox3.Text += myEditComboBox2.ShowFieldValue.ToString() + "->";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            myEditTextBox3.FieldValue = "";
+            textBox3.Text = "";
+        }
+
+        private void butClear_Click(object sender, EventArgs e)
+        {
+            listView1.Clear();
+        }
+        
 
     }
 }

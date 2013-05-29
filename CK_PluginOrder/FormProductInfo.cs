@@ -32,8 +32,8 @@ namespace CK_PluginOrder
             else
             {
                 amount = 0;
-            }
-
+            }       
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,6 +48,19 @@ namespace CK_PluginOrder
             if (ds != null && ds.Rows.Count > 0)
             {
                 
+                listView1.Columns.Add("商品ID", 60, HorizontalAlignment.Left);
+                listView1.Columns.Add("商品编码", 60, HorizontalAlignment.Left);
+                listView1.Columns.Add("商品名称", 60, HorizontalAlignment.Left);
+                listView1.Columns.Add("采购数量", 60, HorizontalAlignment.Left);
+                listView1.Columns.Add("单位", 60, HorizontalAlignment.Left);
+                listView1.Columns.Add("商品单价", 60, HorizontalAlignment.Left);
+                listView1.Columns.Add("小计金额", 60, HorizontalAlignment.Left);
+
+
+          
+
+
+
                 for (int i = 0; ds.Rows.Count > i; i++)
                 {
                     ListViewItem item = new ListViewItem(ds.Rows[0]["F_ID"].ToString());
