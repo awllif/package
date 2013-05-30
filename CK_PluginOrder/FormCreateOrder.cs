@@ -49,26 +49,7 @@ namespace CK_PluginOrder
         /// <param name="e"></param>
         void myEditTreeView1_MyItemCheck(object sender, EventArgs e)
         {
-            String id = myEditTreeView1.FieldValue.ToString();//单品ID
-            String sql = "select *,(SELECT F_NAME FROM CK_COMPANY WHERE F_ID=F_COMPANYID)as F_COMPANYNAME from [CK_PRODUCT] where F_PROTYPE=" + id;//用于查询这个商品的全部信息
-            IAdapter iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
-            DataTable ntable = (DataTable)iad.RunCmdnoCheck("AFunction2", new object[]{sql});
-            if (ntable.Rows.Count > 0)
-            {
-                MyDataView mdv = new MyDataView();
-                mdv.SetKey("f_id");
-                foreach (DataRow dr in ntable.Rows)
-                {
-                    mdv.SelectedRows.Add(dr["f_id"].ToString(), dr);
-                }
-                mdv.iapplication = iapplication;
-                FormProductInfo fpdi = new FormProductInfo(iapplication, mdv, listView1, ntable, myEditTextBox2);
-                fpdi.ShowForm(FormType.Edit);
-            }
-            else
-            {
-                MessageBox.Show("商品信息不完整, 请到商品管理进行设置!");
-            }
+
         }
 
 
@@ -109,6 +90,30 @@ namespace CK_PluginOrder
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void myEditTreeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            String id = myEditTreeView1.FieldValue.ToString();//单品ID
+            String sql = "select *,(SELECT F_NAME FROM CK_COMPANY WHERE F_ID=F_COMPANYID)as F_COMPANYNAME from [CK_PRODUCT] where F_PROTYPE=" + id;//用于查询这个商品的全部信息
+            IAdapter iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
+            DataTable ntable = (DataTable)iad.RunCmdnoCheck("AFunction2", new object[] { sql });
+            if (ntable.Rows.Count > 0)
+            {
+                MyDataView mdv = new MyDataView();
+                mdv.SetKey("f_id");
+                foreach (DataRow dr in ntable.Rows)
+                {
+                    mdv.SelectedRows.Add(dr["f_id"].ToString(), dr);
+                }
+                mdv.iapplication = iapplication;
+                FormProductInfo fpdi = new FormProductInfo(iapplication, mdv, listView1, ntable, myEditTextBox2);
+                fpdi.ShowForm(FormType.Edit);
+            }
+            else
+            {
+                MessageBox.Show("商品信息不完整, 请到商品管理进行设置!");
+            }
         }
 
     }
