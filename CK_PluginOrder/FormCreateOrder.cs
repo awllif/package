@@ -70,15 +70,14 @@ namespace CK_PluginOrder
                 f2x.addField("F_PRODUCT", SqlDbType.VarChar, listView1.Items[i].SubItems[2].Text.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_CODE", SqlDbType.VarChar, listView1.Items[i].SubItems[1].Text.ToString(), false, false);//定义要修改的字段和值
                 String retxml = (string)Iad.RunCmdnoCheck("AFunction1", new object[] { f2x.getDataXml(FormType.Insert) });//指定执行类型,执行
-                f2x.ReturnXmlAnalsy(retxml);//返回的执行结果;
-                MessageBox.Show(retxml);
                 amount =amount+ Int32.Parse(listView1.Items[i].SubItems[6].Text.ToString());
 
             }
-            MessageBox.Show(amount.ToString());
             this.myEditTextBox2.FieldValue = amount;
+            this.myEditTextBox4.FieldValue = 0;//流程状态,审批中
             this.Commit();
             this.listView1.Clear();
+            this.textBox3.Text = "";
         }
 
         private void butCancel_Click(object sender, EventArgs e)
@@ -86,34 +85,23 @@ namespace CK_PluginOrder
             this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void myEditComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            myEditTextBox3.FieldValue +=myEditComboBox2.FieldValue.ToString()+",";
+            textBox3.Text += myEditComboBox2.ShowFieldValue.ToString() + "->";
         }
 
-        private void myEditTreeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            String id = myEditTreeView1.FieldValue.ToString();//单品ID
-            String sql = "select *,(SELECT F_NAME FROM CK_COMPANY WHERE F_ID=F_COMPANYID)as F_COMPANYNAME from [CK_PRODUCT] where F_PROTYPE=" + id;//用于查询这个商品的全部信息
-            IAdapter iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
-            DataTable ntable = (DataTable)iad.RunCmdnoCheck("AFunction2", new object[] { sql });
-            if (ntable.Rows.Count > 0)
-            {
-                MyDataView mdv = new MyDataView();
-                mdv.SetKey("f_id");
-                foreach (DataRow dr in ntable.Rows)
-                {
-                    mdv.SelectedRows.Add(dr["f_id"].ToString(), dr);
-                }
-                mdv.iapplication = iapplication;
-                FormProductInfo fpdi = new FormProductInfo(iapplication, mdv, listView1, ntable, myEditTextBox2);
-                fpdi.ShowForm(FormType.Edit);
-            }
-            else
-            {
-                MessageBox.Show("商品信息不完整, 请到商品管理进行设置!");
-            }
+            myEditTextBox3.FieldValue = "";
+            textBox3.Text = "";
         }
+
+        private void butClear_Click(object sender, EventArgs e)
+        {
+            listView1.Clear();
+        }
+        
 
     }
 }

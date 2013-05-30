@@ -33,7 +33,7 @@ namespace CK_PluginOrder
             else
             {
                 amount = 0;
-            }
+            }       
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -28,46 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode451 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode452 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode453 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode454 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode455 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode456 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode457 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode458 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode459 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode460 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode461 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode462 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode463 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode464 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode465 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode466 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode467 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode468 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode469 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode470 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode471 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode472 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode473 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode474 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode475 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode476 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode477 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode478 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode479 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode480 = new System.Windows.Forms.TreeNode("树名称");
             this.butOk = new System.Windows.Forms.Button();
             this.butClear = new System.Windows.Forms.Button();
             this.butCancel = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.myEditTextBox2 = new Rock.Interface.MyEditTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,11 +71,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.myEditTreeView1 = new Rock.Interface.MyEditTreeView();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.myEditComboBox1 = new Rock.Interface.MyEditComboBox();
             this.myAgency = new Rock.Interface.MyEditComboBox();
-            this.myEditTextBox1 = new Rock.Interface.MyEditTextBox();
-            this.myUserName = new Rock.Interface.MyEditTextBox();
-            this.myUserAgency = new Rock.Interface.MyEditTextBox();
+            this.myEditTextBox3 = new Rock.Interface.MyEditTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.myEditTextBox4 = new Rock.Interface.MyEditTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.myEditComboBox2 = new Rock.Interface.MyEditComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.pnelMain.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -108,7 +103,6 @@
             this.pnelMain.Controls.Add(this.myEditTextBox2);
             this.pnelMain.Controls.Add(this.myOrderNumber);
             this.pnelMain.Controls.Add(this.groupBox1);
-            this.pnelMain.Controls.Add(this.myEditComboBox1);
             this.pnelMain.Controls.Add(this.butOk);
             this.pnelMain.Controls.Add(this.label1);
             this.pnelMain.Controls.Add(this.myAgency);
@@ -118,8 +112,7 @@
             this.pnelMain.Controls.Add(this.butCancel);
             this.pnelMain.Controls.Add(this.label3);
             this.pnelMain.Controls.Add(this.lblDept);
-            this.pnelMain.Controls.Add(this.label2);
-            this.pnelMain.Size = new System.Drawing.Size(861, 401);
+            this.pnelMain.Size = new System.Drawing.Size(861, 449);
             // 
             // butOk
             // 
@@ -159,7 +152,6 @@
             this.label2.TabIndex = 57;
             this.label2.Text = "状态:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -268,7 +260,6 @@
             // 
             this.myEditTreeView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.myEditTreeView1.Datarow = null;
-            this.myEditTreeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.myEditTreeView1.EditField = "F_PROTYPE";
             this.myEditTreeView1.EditFieldType = System.Data.SqlDbType.Int;
             this.myEditTreeView1.FieldMaxLength = 0;
@@ -602,13 +593,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private Rock.Interface.MyEditTreeView myEditTreeView1;
         private System.Windows.Forms.ListView listView1;
-        private Rock.Interface.MyEditComboBox myEditComboBox1;
         private System.Windows.Forms.Label label1;
         private Rock.Interface.MyEditComboBox myAgency;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblDept;
+        private Rock.Interface.MyEditTextBox myEditTextBox3;
         private System.Windows.Forms.Label label2;
         private Rock.Interface.MyEditTextBox myEditTextBox1;
         private Rock.Interface.MyEditTextBox myUserAgency;
