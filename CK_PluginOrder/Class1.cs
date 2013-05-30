@@ -18,7 +18,7 @@ namespace CK_PluginOrder
         private System.ComponentModel.IContainer components;
     
         public CKPlugApplyOrder()
-        {
+        {  
         }
         public override void Initialization()
         {
