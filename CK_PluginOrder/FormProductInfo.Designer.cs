@@ -51,7 +51,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.myEditTextBox8 = new Rock.Interface.MyEditTextBox();
             this.myEditTextBox9 = new Rock.Interface.MyEditTextBox();
@@ -66,7 +65,6 @@
             this.myEditTextBox19 = new Rock.Interface.MyEditTextBox();
             this.myEditTextBox20 = new Rock.Interface.MyEditTextBox();
             this.myEditImageElement1 = new Rock.Interface.MyEditImageElement();
-            this.myEditOptions1 = new Rock.Interface.MyEditOptions();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lblType = new System.Windows.Forms.Label();
@@ -75,6 +73,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.myEditTextBox1 = new Rock.Interface.MyEditTextBox();
             this.myEditTextBox7 = new Rock.Interface.MyEditTextBox();
+            this.dataBindControl1 = new Rock.Interface.DataBindControl();
             this.pnelMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +92,7 @@
             // 
             // pnelMain
             // 
+            this.pnelMain.Controls.Add(this.dataBindControl1);
             this.pnelMain.Controls.Add(this.myEditTextBox7);
             this.pnelMain.Controls.Add(this.myEditTextBox1);
             this.pnelMain.Controls.Add(this.textBox2);
@@ -100,7 +100,6 @@
             this.pnelMain.Controls.Add(this.textBox1);
             this.pnelMain.Controls.Add(this.button2);
             this.pnelMain.Controls.Add(this.button1);
-            this.pnelMain.Controls.Add(this.myEditOptions1);
             this.pnelMain.Controls.Add(this.myEditImageElement1);
             this.pnelMain.Controls.Add(this.label6);
             this.pnelMain.Controls.Add(this.label12);
@@ -109,7 +108,6 @@
             this.pnelMain.Controls.Add(this.label17);
             this.pnelMain.Controls.Add(this.label9);
             this.pnelMain.Controls.Add(this.label20);
-            this.pnelMain.Controls.Add(this.label19);
             this.pnelMain.Controls.Add(this.label18);
             this.pnelMain.Controls.Add(this.label16);
             this.pnelMain.Controls.Add(this.label15);
@@ -139,12 +137,12 @@
             this.pnelMain.Controls.Add(this.myEditTextBox20);
             this.pnelMain.Controls.Add(this.myEditTextBox3);
             this.pnelMain.Controls.Add(this.myEditTextBox2);
-            this.pnelMain.Size = new System.Drawing.Size(619, 415);
+            this.pnelMain.Size = new System.Drawing.Size(619, 421);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 13);
+            this.label1.Location = new System.Drawing.Point(10, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 16;
@@ -163,7 +161,7 @@
             this.myEditTextBox2.IsIdentified = false;
             this.myEditTextBox2.IsKeyField = false;
             this.myEditTextBox2.IsValid = true;
-            this.myEditTextBox2.Location = new System.Drawing.Point(77, 9);
+            this.myEditTextBox2.Location = new System.Drawing.Point(71, 9);
             this.myEditTextBox2.Name = "myEditTextBox2";
             this.myEditTextBox2.ReadOnly = true;
             this.myEditTextBox2.RegexDesc = "";
@@ -187,7 +185,7 @@
             this.myEditTextBox3.IsIdentified = false;
             this.myEditTextBox3.IsKeyField = false;
             this.myEditTextBox3.IsValid = true;
-            this.myEditTextBox3.Location = new System.Drawing.Point(77, 36);
+            this.myEditTextBox3.Location = new System.Drawing.Point(71, 36);
             this.myEditTextBox3.Name = "myEditTextBox3";
             this.myEditTextBox3.ReadOnly = true;
             this.myEditTextBox3.RegexDesc = "";
@@ -201,7 +199,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 40);
+            this.label2.Location = new System.Drawing.Point(10, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 16;
@@ -220,7 +218,7 @@
             this.myEditTextBox4.IsIdentified = false;
             this.myEditTextBox4.IsKeyField = false;
             this.myEditTextBox4.IsValid = true;
-            this.myEditTextBox4.Location = new System.Drawing.Point(77, 63);
+            this.myEditTextBox4.Location = new System.Drawing.Point(71, 63);
             this.myEditTextBox4.Name = "myEditTextBox4";
             this.myEditTextBox4.ReadOnly = true;
             this.myEditTextBox4.RegexDesc = "";
@@ -234,7 +232,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 68);
+            this.label3.Location = new System.Drawing.Point(10, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 16;
@@ -253,7 +251,7 @@
             this.myEditTextBox5.IsIdentified = false;
             this.myEditTextBox5.IsKeyField = false;
             this.myEditTextBox5.IsValid = true;
-            this.myEditTextBox5.Location = new System.Drawing.Point(77, 90);
+            this.myEditTextBox5.Location = new System.Drawing.Point(71, 90);
             this.myEditTextBox5.Name = "myEditTextBox5";
             this.myEditTextBox5.ReadOnly = true;
             this.myEditTextBox5.RegexDesc = "";
@@ -267,7 +265,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 93);
+            this.label4.Location = new System.Drawing.Point(10, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 16;
@@ -276,7 +274,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 120);
+            this.label5.Location = new System.Drawing.Point(10, 120);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 16;
@@ -285,7 +283,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 199);
+            this.label6.Location = new System.Drawing.Point(10, 199);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 16;
@@ -304,7 +302,7 @@
             this.myEditTextBox6.IsIdentified = false;
             this.myEditTextBox6.IsKeyField = false;
             this.myEditTextBox6.IsValid = true;
-            this.myEditTextBox6.Location = new System.Drawing.Point(77, 117);
+            this.myEditTextBox6.Location = new System.Drawing.Point(71, 117);
             this.myEditTextBox6.Name = "myEditTextBox6";
             this.myEditTextBox6.ReadOnly = true;
             this.myEditTextBox6.RegexDesc = "";
@@ -318,7 +316,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 174);
+            this.label8.Location = new System.Drawing.Point(10, 174);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 16;
@@ -327,7 +325,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(22, 151);
+            this.label9.Location = new System.Drawing.Point(10, 151);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 12);
             this.label9.TabIndex = 16;
@@ -336,7 +334,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 226);
+            this.label10.Location = new System.Drawing.Point(10, 226);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 12);
             this.label10.TabIndex = 16;
@@ -345,7 +343,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(246, 252);
+            this.label11.Location = new System.Drawing.Point(241, 252);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 12);
             this.label11.TabIndex = 16;
@@ -354,7 +352,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(246, 226);
+            this.label12.Location = new System.Drawing.Point(241, 226);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(29, 12);
             this.label12.TabIndex = 16;
@@ -363,7 +361,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(20, 253);
+            this.label13.Location = new System.Drawing.Point(10, 253);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 12);
             this.label13.TabIndex = 16;
@@ -381,7 +379,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(20, 280);
+            this.label15.Location = new System.Drawing.Point(10, 280);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 12);
             this.label15.TabIndex = 16;
@@ -390,7 +388,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(246, 279);
+            this.label16.Location = new System.Drawing.Point(241, 279);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 12);
             this.label16.TabIndex = 16;
@@ -399,7 +397,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(246, 306);
+            this.label17.Location = new System.Drawing.Point(241, 306);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(53, 12);
             this.label17.TabIndex = 16;
@@ -408,25 +406,16 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(20, 307);
+            this.label18.Location = new System.Drawing.Point(10, 307);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(53, 12);
             this.label18.TabIndex = 16;
             this.label18.Text = "保质期限";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(21, 360);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 12);
-            this.label19.TabIndex = 16;
-            this.label19.Text = "商品状态";
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(20, 334);
+            this.label20.Location = new System.Drawing.Point(10, 334);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(53, 12);
             this.label20.TabIndex = 16;
@@ -445,7 +434,7 @@
             this.myEditTextBox8.IsIdentified = false;
             this.myEditTextBox8.IsKeyField = false;
             this.myEditTextBox8.IsValid = true;
-            this.myEditTextBox8.Location = new System.Drawing.Point(77, 171);
+            this.myEditTextBox8.Location = new System.Drawing.Point(71, 171);
             this.myEditTextBox8.Name = "myEditTextBox8";
             this.myEditTextBox8.ReadOnly = true;
             this.myEditTextBox8.RegexDesc = "";
@@ -469,7 +458,7 @@
             this.myEditTextBox9.IsIdentified = false;
             this.myEditTextBox9.IsKeyField = false;
             this.myEditTextBox9.IsValid = true;
-            this.myEditTextBox9.Location = new System.Drawing.Point(77, 144);
+            this.myEditTextBox9.Location = new System.Drawing.Point(71, 144);
             this.myEditTextBox9.Name = "myEditTextBox9";
             this.myEditTextBox9.ReadOnly = true;
             this.myEditTextBox9.RegexDesc = "";
@@ -493,7 +482,7 @@
             this.myEditTextBox10.IsIdentified = false;
             this.myEditTextBox10.IsKeyField = false;
             this.myEditTextBox10.IsValid = true;
-            this.myEditTextBox10.Location = new System.Drawing.Point(77, 196);
+            this.myEditTextBox10.Location = new System.Drawing.Point(71, 196);
             this.myEditTextBox10.Name = "myEditTextBox10";
             this.myEditTextBox10.ReadOnly = true;
             this.myEditTextBox10.RegexDesc = "";
@@ -517,7 +506,7 @@
             this.myEditTextBox11.IsIdentified = false;
             this.myEditTextBox11.IsKeyField = false;
             this.myEditTextBox11.IsValid = true;
-            this.myEditTextBox11.Location = new System.Drawing.Point(77, 223);
+            this.myEditTextBox11.Location = new System.Drawing.Point(71, 223);
             this.myEditTextBox11.Name = "myEditTextBox11";
             this.myEditTextBox11.ReadOnly = true;
             this.myEditTextBox11.RegexDesc = "";
@@ -541,7 +530,7 @@
             this.myEditTextBox12.IsIdentified = false;
             this.myEditTextBox12.IsKeyField = false;
             this.myEditTextBox12.IsValid = true;
-            this.myEditTextBox12.Location = new System.Drawing.Point(77, 250);
+            this.myEditTextBox12.Location = new System.Drawing.Point(71, 250);
             this.myEditTextBox12.Name = "myEditTextBox12";
             this.myEditTextBox12.ReadOnly = true;
             this.myEditTextBox12.RegexDesc = "";
@@ -613,7 +602,7 @@
             this.myEditTextBox15.IsIdentified = false;
             this.myEditTextBox15.IsKeyField = false;
             this.myEditTextBox15.IsValid = true;
-            this.myEditTextBox15.Location = new System.Drawing.Point(77, 277);
+            this.myEditTextBox15.Location = new System.Drawing.Point(71, 277);
             this.myEditTextBox15.Name = "myEditTextBox15";
             this.myEditTextBox15.ReadOnly = true;
             this.myEditTextBox15.RegexDesc = "";
@@ -663,7 +652,7 @@
             this.myEditTextBox17.IsIdentified = false;
             this.myEditTextBox17.IsKeyField = false;
             this.myEditTextBox17.IsValid = true;
-            this.myEditTextBox17.Location = new System.Drawing.Point(77, 304);
+            this.myEditTextBox17.Location = new System.Drawing.Point(71, 304);
             this.myEditTextBox17.Name = "myEditTextBox17";
             this.myEditTextBox17.ReadOnly = true;
             this.myEditTextBox17.RegexDesc = "";
@@ -688,14 +677,14 @@
             this.myEditTextBox19.IsIdentified = false;
             this.myEditTextBox19.IsKeyField = false;
             this.myEditTextBox19.IsValid = true;
-            this.myEditTextBox19.Location = new System.Drawing.Point(77, 331);
+            this.myEditTextBox19.Location = new System.Drawing.Point(71, 331);
             this.myEditTextBox19.Name = "myEditTextBox19";
             this.myEditTextBox19.ReadOnly = true;
             this.myEditTextBox19.RegexDesc = "";
             this.myEditTextBox19.RegexRule = "";
             this.myEditTextBox19.ShowField = "F_DESC";
             this.myEditTextBox19.ShowFieldValue = null;
-            this.myEditTextBox19.Size = new System.Drawing.Size(532, 21);
+            this.myEditTextBox19.Size = new System.Drawing.Size(538, 21);
             this.myEditTextBox19.TabIndex = 17;
             this.myEditTextBox19.TableName = null;
             // 
@@ -732,7 +721,7 @@
             this.myEditImageElement1.FieldMinLength = 0;
             this.myEditImageElement1.FieldValue = resources.GetString("myEditImageElement1.FieldValue");
             this.myEditImageElement1.iapplication = null;
-            this.myEditImageElement1.IsCanEdit = true;
+            this.myEditImageElement1.IsCanEdit = false;
             this.myEditImageElement1.IsIdentified = false;
             this.myEditImageElement1.IsKeyField = false;
             this.myEditImageElement1.IsValid = true;
@@ -747,35 +736,9 @@
             this.myEditImageElement1.TabIndex = 20;
             this.myEditImageElement1.TableName = null;
             // 
-            // myEditOptions1
-            // 
-            this.myEditOptions1.Datarow = null;
-            this.myEditOptions1.EditField = "F_STATE";
-            this.myEditOptions1.EditFieldType = System.Data.SqlDbType.Int;
-            this.myEditOptions1.FieldMaxLength = 0;
-            this.myEditOptions1.FieldMinLength = 0;
-            this.myEditOptions1.FieldValue = "";
-            this.myEditOptions1.iapplication = null;
-            this.myEditOptions1.IsCanEdit = true;
-            this.myEditOptions1.IsIdentified = false;
-            this.myEditOptions1.IsKeyField = false;
-            this.myEditOptions1.IsValid = true;
-            this.myEditOptions1.ItemsSql = "SELECT F_VALUE AS F_STATE,F_NAME AS F_STATENAME FROM T_BASE_DICT WHERE F_CODE=\'CM" +
-                "_STATE\'";
-            this.myEditOptions1.Location = new System.Drawing.Point(77, 360);
-            this.myEditOptions1.Name = "myEditOptions1";
-            this.myEditOptions1.RegexDesc = "";
-            this.myEditOptions1.RegexRule = "";
-            this.myEditOptions1.ShowField = "F_STATENAME";
-            this.myEditOptions1.ShowFieldValue = "";
-            this.myEditOptions1.Size = new System.Drawing.Size(532, 20);
-            this.myEditOptions1.TabIndex = 18;
-            this.myEditOptions1.TableName = "";
-            this.myEditOptions1.Vertical = false;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(534, 387);
+            this.button2.Location = new System.Drawing.Point(523, 385);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 21;
@@ -785,7 +748,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(453, 387);
+            this.button1.Location = new System.Drawing.Point(442, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 20;
@@ -796,7 +759,7 @@
             // lblType
             // 
             this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(19, 390);
+            this.lblType.Location = new System.Drawing.Point(10, 361);
             this.lblType.Name = "lblType";
             this.lblType.Size = new System.Drawing.Size(53, 12);
             this.lblType.TabIndex = 16;
@@ -804,7 +767,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 387);
+            this.textBox1.Location = new System.Drawing.Point(71, 358);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 22;
@@ -812,7 +775,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(252, 387);
+            this.textBox2.Location = new System.Drawing.Point(259, 358);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 21);
@@ -821,7 +784,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(193, 390);
+            this.label7.Location = new System.Drawing.Point(200, 361);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 12);
             this.label7.TabIndex = 23;
@@ -875,11 +838,20 @@
             this.myEditTextBox7.TabIndex = 26;
             this.myEditTextBox7.TableName = null;
             // 
+            // dataBindControl1
+            // 
+            this.dataBindControl1.iapplication = null;
+            this.dataBindControl1.IDS = null;
+            this.dataBindControl1.Location = new System.Drawing.Point(12, 385);
+            this.dataBindControl1.Name = "dataBindControl1";
+            this.dataBindControl1.Size = new System.Drawing.Size(347, 23);
+            this.dataBindControl1.TabIndex = 27;
+            // 
             // FormProductInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 445);
+            this.ClientSize = new System.Drawing.Size(623, 451);
             this.Name = "FormProductInfo";
             this.Table = "CK_PRODUCT";
             this.Text = "商品信息";
@@ -907,7 +879,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
@@ -928,7 +899,6 @@
         private Rock.Interface.MyEditTextBox myEditTextBox14;
         private Rock.Interface.MyEditTextBox myEditTextBox13;
         private Rock.Interface.MyEditTextBox myEditTextBox20;
-        private Rock.Interface.MyEditOptions myEditOptions1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblType;
@@ -937,5 +907,6 @@
         private System.Windows.Forms.Label label7;
         private Rock.Interface.MyEditTextBox myEditTextBox1;
         private Rock.Interface.MyEditTextBox myEditTextBox7;
+        private Rock.Interface.DataBindControl dataBindControl1;
     }
 }

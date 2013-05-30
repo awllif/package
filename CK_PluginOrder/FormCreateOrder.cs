@@ -24,6 +24,7 @@ namespace CK_PluginOrder
             IRight ir = (IRight)iapplication.GetService(typeof(IRight));
             textBox1.Text = ir.UserName;
             textBox2.Text = ir.AgencyName;
+            myOrderNumber.FieldValue = "CG" + ir.UserId + DateTime.Now.ToString("yyMMddhhmmss");
             myEditTreeView1.MyItemCheck += new EventHandler(myEditTreeView1_MyItemCheck);
             listView1.Columns.Add("商品ID", 60, HorizontalAlignment.Left);
             listView1.Columns.Add("商品编码", 60, HorizontalAlignment.Left);
@@ -48,23 +49,7 @@ namespace CK_PluginOrder
         /// <param name="e"></param>
         void myEditTreeView1_MyItemCheck(object sender, EventArgs e)
         {
-            String id = myEditTreeView1.FieldValue.ToString();//单品ID
-            String sql = "select *,(SELECT F_NAME FROM CK_COMPANY WHERE F_ID=F_COMPANYID)as F_COMPANYNAME from [CK_PRODUCT] where F_PROTYPE=" + id;//用于查询这个商品的全部信息
-            IAdapter iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
-            DataTable ntable = (DataTable)iad.RunCmdnoCheck("AFunction2", new object[]{sql});
-            if (ntable.Rows.Count > 0)
-            {
-                MyDataView mdv = new MyDataView();
-                mdv.SetKey("f_id");
-                mdv.SelectedRows.Add("f_id", ntable.Rows[0]);
-                mdv.iapplication = iapplication;
-                FormProductInfo fpdi = new FormProductInfo(iapplication, mdv, listView1, ntable, myEditTextBox2);
-                fpdi.ShowForm(FormType.Edit);
-            }
-            else
-            {
-                MessageBox.Show("商品信息不完整, 请到商品管理进行设置!");
-            }
+
         }
 
 
@@ -78,7 +63,7 @@ namespace CK_PluginOrder
                
                 Fields2Xml f2x = new Fields2Xml("CK_ORDERPRODUCT");//定义要修改的表名
                 //f2x.addField("F_IP", SqlDbType.VarChar, dr["F_IP"].ToString(), true, false);//指定主键值,没指定主键将添加
-                f2x.addField("F_PurchasNo", SqlDbType.VarChar, myEditTextBox1.FieldValue.ToString(), false, false);//定义要修改的字段和值
+                f2x.addField("F_PurchasNo", SqlDbType.VarChar, myOrderNumber.FieldValue.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_PRODUCTID", SqlDbType.Int, listView1.Items[i].SubItems[0].Text.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_COUNT", SqlDbType.Int, listView1.Items[i].SubItems[3].Text.ToString(), false, false);//定义要修改的字段和值
                 f2x.addField("F_UnitPrice", SqlDbType.Int, listView1.Items[i].SubItems[5].Text.ToString(), false, false);//定义要修改的字段和值
@@ -100,6 +85,35 @@ namespace CK_PluginOrder
         private void butCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myEditTreeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            String id = myEditTreeView1.FieldValue.ToString();//单品ID
+            String sql = "select *,(SELECT F_NAME FROM CK_COMPANY WHERE F_ID=F_COMPANYID)as F_COMPANYNAME from [CK_PRODUCT] where F_PROTYPE=" + id;//用于查询这个商品的全部信息
+            IAdapter iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
+            DataTable ntable = (DataTable)iad.RunCmdnoCheck("AFunction2", new object[] { sql });
+            if (ntable.Rows.Count > 0)
+            {
+                MyDataView mdv = new MyDataView();
+                mdv.SetKey("f_id");
+                foreach (DataRow dr in ntable.Rows)
+                {
+                    mdv.SelectedRows.Add(dr["f_id"].ToString(), dr);
+                }
+                mdv.iapplication = iapplication;
+                FormProductInfo fpdi = new FormProductInfo(iapplication, mdv, listView1, ntable, myEditTextBox2);
+                fpdi.ShowForm(FormType.Edit);
+            }
+            else
+            {
+                MessageBox.Show("商品信息不完整, 请到商品管理进行设置!");
+            }
         }
 
     }

@@ -58,6 +58,12 @@
             System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("树名称");
             System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("树名称");
             System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("树名称");
             this.butOk = new System.Windows.Forms.Button();
             this.butClear = new System.Windows.Forms.Button();
             this.butCancel = new System.Windows.Forms.Button();
@@ -65,7 +71,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.myEditTextBox2 = new Rock.Interface.MyEditTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.myEditTextBox1 = new Rock.Interface.MyEditTextBox();
+            this.myOrderNumber = new Rock.Interface.MyEditTextBox();
             this.lblDept = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -76,6 +82,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.myEditComboBox1 = new Rock.Interface.MyEditComboBox();
             this.myAgency = new Rock.Interface.MyEditComboBox();
+            this.myEditTextBox1 = new Rock.Interface.MyEditTextBox();
             this.pnelMain.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -95,10 +102,11 @@
             // 
             // pnelMain
             // 
+            this.pnelMain.Controls.Add(this.myEditTextBox1);
             this.pnelMain.Controls.Add(this.textBox2);
             this.pnelMain.Controls.Add(this.textBox1);
             this.pnelMain.Controls.Add(this.myEditTextBox2);
-            this.pnelMain.Controls.Add(this.myEditTextBox1);
+            this.pnelMain.Controls.Add(this.myOrderNumber);
             this.pnelMain.Controls.Add(this.groupBox1);
             this.pnelMain.Controls.Add(this.myEditComboBox1);
             this.pnelMain.Controls.Add(this.butOk);
@@ -115,7 +123,7 @@
             // 
             // butOk
             // 
-            this.butOk.Location = new System.Drawing.Point(695, 374);
+            this.butOk.Location = new System.Drawing.Point(712, 369);
             this.butOk.Name = "butOk";
             this.butOk.Size = new System.Drawing.Size(75, 23);
             this.butOk.TabIndex = 8;
@@ -125,7 +133,7 @@
             // 
             // butClear
             // 
-            this.butClear.Location = new System.Drawing.Point(614, 375);
+            this.butClear.Location = new System.Drawing.Point(631, 369);
             this.butClear.Name = "butClear";
             this.butClear.Size = new System.Drawing.Size(75, 23);
             this.butClear.TabIndex = 7;
@@ -134,7 +142,7 @@
             // 
             // butCancel
             // 
-            this.butCancel.Location = new System.Drawing.Point(776, 374);
+            this.butCancel.Location = new System.Drawing.Point(793, 370);
             this.butCancel.Name = "butCancel";
             this.butCancel.Size = new System.Drawing.Size(75, 23);
             this.butCancel.TabIndex = 9;
@@ -150,6 +158,7 @@
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 57;
             this.label2.Text = "状态:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -180,7 +189,7 @@
             this.myEditTextBox2.RegexRule = "";
             this.myEditTextBox2.ShowField = "F_AMOUNT";
             this.myEditTextBox2.ShowFieldValue = null;
-            this.myEditTextBox2.Size = new System.Drawing.Size(100, 21);
+            this.myEditTextBox2.Size = new System.Drawing.Size(76, 21);
             this.myEditTextBox2.TabIndex = 5;
             this.myEditTextBox2.TableName = null;
             this.myEditTextBox2.Text = "0";
@@ -194,28 +203,28 @@
             this.label1.TabIndex = 57;
             this.label1.Text = "采购单号";
             // 
-            // myEditTextBox1
+            // myOrderNumber
             // 
-            this.myEditTextBox1.Datarow = null;
-            this.myEditTextBox1.EditField = "F_ORDERNUMBER";
-            this.myEditTextBox1.EditFieldType = System.Data.SqlDbType.Int;
-            this.myEditTextBox1.FieldMaxLength = 0;
-            this.myEditTextBox1.FieldMinLength = 0;
-            this.myEditTextBox1.FieldValue = "";
-            this.myEditTextBox1.iapplication = null;
-            this.myEditTextBox1.IsCanEdit = false;
-            this.myEditTextBox1.IsIdentified = true;
-            this.myEditTextBox1.IsKeyField = true;
-            this.myEditTextBox1.IsValid = true;
-            this.myEditTextBox1.Location = new System.Drawing.Point(69, 8);
-            this.myEditTextBox1.Name = "myEditTextBox1";
-            this.myEditTextBox1.RegexDesc = "";
-            this.myEditTextBox1.RegexRule = "";
-            this.myEditTextBox1.ShowField = "F_ORDERNUMBER";
-            this.myEditTextBox1.ShowFieldValue = null;
-            this.myEditTextBox1.Size = new System.Drawing.Size(100, 21);
-            this.myEditTextBox1.TabIndex = 0;
-            this.myEditTextBox1.TableName = null;
+            this.myOrderNumber.Datarow = null;
+            this.myOrderNumber.EditField = "F_ORDERNUMBER";
+            this.myOrderNumber.EditFieldType = System.Data.SqlDbType.VarChar;
+            this.myOrderNumber.FieldMaxLength = 0;
+            this.myOrderNumber.FieldMinLength = 0;
+            this.myOrderNumber.FieldValue = "";
+            this.myOrderNumber.iapplication = null;
+            this.myOrderNumber.IsCanEdit = false;
+            this.myOrderNumber.IsIdentified = false;
+            this.myOrderNumber.IsKeyField = false;
+            this.myOrderNumber.IsValid = true;
+            this.myOrderNumber.Location = new System.Drawing.Point(69, 8);
+            this.myOrderNumber.Name = "myOrderNumber";
+            this.myOrderNumber.RegexDesc = "";
+            this.myOrderNumber.RegexRule = "";
+            this.myOrderNumber.ShowField = "F_ORDERNUMBER";
+            this.myOrderNumber.ShowFieldValue = null;
+            this.myOrderNumber.Size = new System.Drawing.Size(100, 21);
+            this.myOrderNumber.TabIndex = 0;
+            this.myOrderNumber.TableName = null;
             // 
             // lblDept
             // 
@@ -385,6 +394,24 @@
             treeNode30.Name = "";
             treeNode30.Tag = "0";
             treeNode30.Text = "树名称";
+            treeNode31.Name = "";
+            treeNode31.Tag = "0";
+            treeNode31.Text = "树名称";
+            treeNode32.Name = "";
+            treeNode32.Tag = "0";
+            treeNode32.Text = "树名称";
+            treeNode33.Name = "";
+            treeNode33.Tag = "0";
+            treeNode33.Text = "树名称";
+            treeNode34.Name = "";
+            treeNode34.Tag = "0";
+            treeNode34.Text = "树名称";
+            treeNode35.Name = "";
+            treeNode35.Tag = "0";
+            treeNode35.Text = "树名称";
+            treeNode36.Name = "";
+            treeNode36.Tag = "0";
+            treeNode36.Text = "树名称";
             this.myEditTreeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
@@ -415,15 +442,22 @@
             treeNode27,
             treeNode28,
             treeNode29,
-            treeNode30});
+            treeNode30,
+            treeNode31,
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36});
             this.myEditTreeView1.RegexDesc = "";
             this.myEditTreeView1.RegexRule = "";
             this.myEditTreeView1.ShowField = "F_PROTYPE";
             this.myEditTreeView1.ShowFieldValue = "";
-            this.myEditTreeView1.Size = new System.Drawing.Size(156, 310);
+            this.myEditTreeView1.Size = new System.Drawing.Size(180, 310);
             this.myEditTreeView1.TabIndex = 77;
             this.myEditTreeView1.TableName = "";
             this.myEditTreeView1.TreeNodeName = "商品类别";
+            this.myEditTreeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.myEditTreeView1_NodeMouseDoubleClick);
             // 
             // listView1
             // 
@@ -489,6 +523,30 @@
             this.myAgency.TabIndex = 1;
             this.myAgency.TableName = "";
             // 
+            // myEditTextBox1
+            // 
+            this.myEditTextBox1.Datarow = null;
+            this.myEditTextBox1.EditField = "f_id";
+            this.myEditTextBox1.EditFieldType = System.Data.SqlDbType.Int;
+            this.myEditTextBox1.FieldMaxLength = 0;
+            this.myEditTextBox1.FieldMinLength = 0;
+            this.myEditTextBox1.FieldValue = "";
+            this.myEditTextBox1.iapplication = null;
+            this.myEditTextBox1.IsCanEdit = false;
+            this.myEditTextBox1.IsIdentified = true;
+            this.myEditTextBox1.IsKeyField = true;
+            this.myEditTextBox1.IsValid = true;
+            this.myEditTextBox1.Location = new System.Drawing.Point(313, 370);
+            this.myEditTextBox1.Name = "myEditTextBox1";
+            this.myEditTextBox1.RegexDesc = "";
+            this.myEditTextBox1.RegexRule = "";
+            this.myEditTextBox1.ShowField = "f_id";
+            this.myEditTextBox1.ShowFieldValue = null;
+            this.myEditTextBox1.Size = new System.Drawing.Size(100, 21);
+            this.myEditTextBox1.TabIndex = 62;
+            this.myEditTextBox1.TableName = null;
+            this.myEditTextBox1.Visible = false;
+            // 
             // FormCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -512,7 +570,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private Rock.Interface.MyEditTextBox myEditTextBox2;
-        private Rock.Interface.MyEditTextBox myEditTextBox1;
+        private Rock.Interface.MyEditTextBox myOrderNumber;
         private System.Windows.Forms.GroupBox groupBox1;
         private Rock.Interface.MyEditTreeView myEditTreeView1;
         private System.Windows.Forms.ListView listView1;
@@ -524,5 +582,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblDept;
         private System.Windows.Forms.Label label2;
+        private Rock.Interface.MyEditTextBox myEditTextBox1;
     }
 }

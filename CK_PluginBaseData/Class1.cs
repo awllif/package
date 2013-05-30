@@ -130,6 +130,7 @@ namespace CK_PluginBaseData
     {
         public CKPlugCatalog()
         {
+
         }
 
         public override void Initialization()

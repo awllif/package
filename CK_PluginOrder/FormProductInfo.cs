@@ -20,6 +20,7 @@ namespace CK_PluginOrder
         public FormProductInfo(IApplication iapp, IDataService _ids, ListView _listView, DataTable dt, MyEditTextBox _amount)
         {
             InitializeComponent();
+            dataBindControl1.IDS = _ids;
             _iapplication = iapp;
             ids = _ids;
             this.listView1 = _listView;
@@ -33,7 +34,6 @@ namespace CK_PluginOrder
             {
                 amount = 0;
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,30 +43,35 @@ namespace CK_PluginOrder
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //if (ds != null && ds.Rows.Count > 0)
+            //{
+            //    for (int i = 0; ds.Rows.Count > i; i++)
+            //    {
+                    
+            //        //ListViewItem item = new ListViewItem(ds.Rows[0]["F_ID"].ToString());
+            //        //item.SubItems.Add(ds.Rows[i]["F_CODE"].ToString());
+            //        //item.SubItems.Add(ds.Rows[i]["F_NAME"].ToString());
+            //        //item.SubItems.Add(this.textBox1.Text);
+            //        //item.SubItems.Add(ds.Rows[i]["F_MESURE"].ToString());
+            //        //item.SubItems.Add(ds.Rows[i]["F_IN_SPRICE"].ToString());
+            //        //item.SubItems.Add(textBox2.Text);
+            //        //listView1.Items.Add(item);
 
-
-            if (ds != null && ds.Rows.Count > 0)
-            {
-                
-                for (int i = 0; ds.Rows.Count > i; i++)
-                {
-                    ListViewItem item = new ListViewItem(ds.Rows[0]["F_ID"].ToString());
-                    item.SubItems.Add(ds.Rows[i]["F_CODE"].ToString());
-                    item.SubItems.Add(ds.Rows[i]["F_NAME"].ToString());
-                    item.SubItems.Add(this.textBox1.Text);
-                    item.SubItems.Add(ds.Rows[i]["F_MESURE"].ToString());
-                    item.SubItems.Add(ds.Rows[i]["F_IN_SPRICE"].ToString());
-                    item.SubItems.Add(textBox2.Text);
-                    listView1.Items.Add(item);
-                }
-
-            }
-            amount += Int32.Parse(textBox2.Text);
+            //    }
+            //}
+            ListViewItem item = new ListViewItem(editrow["F_ID"].ToString());
+            item.SubItems.Add(editrow["F_CODE"].ToString());
+            item.SubItems.Add(editrow["F_NAME"].ToString());
+            item.SubItems.Add(this.textBox1.Text);
+            item.SubItems.Add(editrow["F_MESURE"].ToString());
+            item.SubItems.Add(editrow["F_IN_SPRICE"].ToString());
+            item.SubItems.Add(textBox2.Text);
+            listView1.Items.Add(item);
+            amount = Int32.Parse(textBox2.Text);
             amountTextBox.FieldValue = amount;
             amountTextBox.ShowFieldValue = amount;
-            this.Close();
+            
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             this.textBox2.Text = (Int32.Parse(textBox1.Text) * Int32.Parse(myEditTextBox12.FieldValue.ToString())).ToString();
