@@ -35,7 +35,7 @@ namespace CK_PluginOrder
             cmdDetail.Click += new EventHandler(cmdDetail_Click);
             //建立功能按钮点击处理函数
             RegCommand(cmdAdd, cmdEdit,cmdDetail);
-
+               
             //标题,字段,宽度,是否主键,是否显示
             this.InitialCaption();
             ////颜色控制列表
