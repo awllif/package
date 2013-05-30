@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using Rock.Interface;
 using Rock.Container;
+using System.Data;
+using System.Collections;
+using System.Windows.Forms;
 
 namespace CK_PluginOrder
 {
@@ -15,7 +18,6 @@ namespace CK_PluginOrder
     PlugDescriptionAttribute("商品类别 ")]
     public partial class CKPlugApplyOrder : PluginNode
     {
-        private System.ComponentModel.IContainer components;
     
         public CKPlugApplyOrder()
         {
@@ -24,9 +26,9 @@ namespace CK_PluginOrder
         {
             //NodeBitmap = Resource.driver;
             //注册功能按钮
-            Command cmdAdd = new Command("创建订单", iapplication, CommandTriger.OFF, (int)ImageType.ADD);
-            Command cmdEdit = new Command("订单编辑", iapplication, CommandTriger.ON, (int)ImageType.EDIT);
-            Command cmdDetail = new Command("订单详情", iapplication, CommandTriger.ON, (int)ImageType.PRINT01);
+            Command cmdAdd = new Command("创建采购单", iapplication, CommandTriger.OFF, (int)ImageType.ADD);
+            Command cmdEdit = new Command("采购单编辑", iapplication, CommandTriger.ON, (int)ImageType.EDIT);
+            Command cmdDetail = new Command("采购单详情表", iapplication, CommandTriger.ON, (int)ImageType.PRINT01);
             // Command cmdPrint = new Command("人员查看", iapplication, CommandTriger.ON, (int)ImageType.PRINT02);
             cmdAdd.Click += new EventHandler(cmdAdd_Click);
             cmdEdit.Click += new EventHandler(cmdEdit_Click);
@@ -48,20 +50,13 @@ namespace CK_PluginOrder
 
         void cmdDetail_Click(object sender, EventArgs e)
         {
-//            throw new NotImplementedException();
+//            报表以后再设计
         }
-        void cmdPrint_Click(object sender, EventArgs e)
-        {
-
-            //displayReport("f292a161-04fd-416a-8275-d4e4b6f35ffb", "71e05c88-7210-4a99-91a8-8e6247fe8baa");
-        }
-        void cmdSetting_Click(object sender, EventArgs e)
-        {
-
-        }
+     
         void cmdEdit_Click(object sender, EventArgs e)
         {
-
+            FormCreateOrder FCO = new FormCreateOrder(iapplication, idataservice);
+            FCO.ShowForm(FormType.Edit);
         }
         void cmdAdd_Click(object sender, EventArgs e)
         {
@@ -73,6 +68,104 @@ namespace CK_PluginOrder
            // FCO.RegStatickElement("F_CREATEAGENCY", System.Data.SqlDbType.VarChar, ir.AgencyName);
             FCO.ShowForm(FormType.Insert);
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            this.ResumeLayout(false);
+
+        }
+    }
+
+   [PlugNameAttribute("采购审批"),
+   PlugQueryFormAttribute("Order_Qurey"),
+   PlugWriterAttribute(""),
+   PlugQueryCmdAttribute("75695b74-3118-4f3f-ac07-63e0e8a763c7"),
+   PlugActionAttribute("采购审批"),
+   PlugDescriptionAttribute("采购审批")]
+    public partial class CKPlugApproveOrder : PluginNode
+    {
+
+        public CKPlugApproveOrder()
+        {   
+        }
+        public override void Initialization()
+        {
+            //NodeBitmap = Resource.driver;
+            //注册功能按钮
+            Command cmdApprove = new Command("审批采购单", iapplication, CommandTriger.ON, (int)ImageType.ADD);
+            Command cmdDetail = new Command("采购单详情表", iapplication, CommandTriger.ON, (int)ImageType.PRINT01);
+
+            cmdApprove.Click += new EventHandler(cmdApprove_Click);
+            cmdDetail.Click += new EventHandler(cmdDetail_Click);
+            //建立功能按钮点击处理函数
+            RegCommand(cmdApprove,cmdDetail);
+
+            //标题,字段,宽度,是否主键,是否显示
+            this.InitialCaption();
+            ////颜色控制列表
+            //this.RegWhere(new object[] { 
+            //                            new object[]{ "F_StateName","草稿",Color.Red},
+            //            new object[]{ "F_StateName","关闭",Color.Gray},
+            //            new object[]{ "F_StateName","发布",Color.Green}});
+
+            ////分组
+            //this.RegGroup(new object[] { "F_EventName" });
+        }
+
+        void cmdDetail_Click(object sender, EventArgs e)
+        {
+            //根据采购单号  生成采购单详情表.
+        }
+
+        void cmdApprove_Click(object sender, EventArgs e)
+        {
+          //查看采购单明细,设置采购单属性到下个审批人或者回退到创建人,如果没有下个审批人.更新采购单状态都审批通过.
+            IReport Ir = (IReport)iapplication.GetService(typeof(IReport));
+            IDataService idataSvr = (IDataService)iapplication.GetService(typeof(IDataService));
+            IAdapter Iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
+            string ReportTemple = (string)Iad.RunCmdnoCheck("AFunction3", new Object[] { "c0d8b9fa-2b7c-4357-a650-dea950413736" });//报表模板
+            MessageBox.Show(idataSvr.SelectedRows.Count.ToString());
+             if (idataSvr.SelectedRows.Count > 0)
+            {
+                DataRow dr;
+                string s=",";
+
+                //获取查询语句条件
+                foreach (DictionaryEntry de in idataSvr.SelectedRows)
+                {
+                    dr = (DataRow)de.Value;
+
+                    if (dr != null)
+                    {
+
+                        s += dr["F_ORDERNUMBER"].ToString().Trim() + ",";
+
+                    }
+
+
+                }
+
+                if (ReportTemple != "")
+                {
+                    DataTable dt = (DataTable)Iad.RunCmdnoCheck("AFunction2", new object[] { "select * from t_base_sql where f_key='eb1e217e-ce9b-4dbd-a35e-8a3859435f16'" });//取得主表的SQL
+
+                    if (dt != null && dt.Rows[0]["F_PurchasNo"].ToString() != "")
+                    {
+                        DataTable data = (DataTable)Iad.RunCmdnoCheck("AFunction2", new object[] { dt.Rows[0]["F_PurchasNo"].ToString().Replace("$f_id$", s) });
+                      
+                        Ir.PrintPreView(ReportTemple, Iad.GetXmlData(data));
+                    }
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("请勾采购单");
+            }
+        }
+
+
 
         private void InitializeComponent()
         {
