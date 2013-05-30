@@ -28,42 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("树名称");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("树名称");
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("树名称");
             this.butOk = new System.Windows.Forms.Button();
             this.butClear = new System.Windows.Forms.Button();
             this.butCancel = new System.Windows.Forms.Button();
@@ -75,14 +75,14 @@
             this.lblDept = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.myEditTreeView1 = new Rock.Interface.MyEditTreeView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.myEditComboBox1 = new Rock.Interface.MyEditComboBox();
             this.myAgency = new Rock.Interface.MyEditComboBox();
             this.myEditTextBox1 = new Rock.Interface.MyEditTextBox();
+            this.myUserName = new Rock.Interface.MyEditTextBox();
+            this.myUserAgency = new Rock.Interface.MyEditTextBox();
             this.pnelMain.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -102,9 +102,9 @@
             // 
             // pnelMain
             // 
+            this.pnelMain.Controls.Add(this.myUserAgency);
             this.pnelMain.Controls.Add(this.myEditTextBox1);
-            this.pnelMain.Controls.Add(this.textBox2);
-            this.pnelMain.Controls.Add(this.textBox1);
+            this.pnelMain.Controls.Add(this.myUserName);
             this.pnelMain.Controls.Add(this.myEditTextBox2);
             this.pnelMain.Controls.Add(this.myOrderNumber);
             this.pnelMain.Controls.Add(this.groupBox1);
@@ -253,22 +253,6 @@
             this.label5.TabIndex = 55;
             this.label5.Text = "部门";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(426, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 60;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(573, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 61;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.myEditTreeView1);
@@ -304,151 +288,151 @@
                 "_pid asc";
             this.myEditTreeView1.Location = new System.Drawing.Point(3, 17);
             this.myEditTreeView1.Name = "myEditTreeView1";
-            treeNode1.Name = "";
-            treeNode1.Tag = "0";
-            treeNode1.Text = "树名称";
-            treeNode2.Name = "";
-            treeNode2.Tag = "0";
-            treeNode2.Text = "树名称";
-            treeNode3.Name = "";
-            treeNode3.Tag = "0";
-            treeNode3.Text = "树名称";
-            treeNode4.Name = "";
-            treeNode4.Tag = "0";
-            treeNode4.Text = "树名称";
-            treeNode5.Name = "";
-            treeNode5.Tag = "0";
-            treeNode5.Text = "树名称";
-            treeNode6.Name = "";
-            treeNode6.Tag = "0";
-            treeNode6.Text = "树名称";
-            treeNode7.Name = "";
-            treeNode7.Tag = "0";
-            treeNode7.Text = "树名称";
-            treeNode8.Name = "";
-            treeNode8.Tag = "0";
-            treeNode8.Text = "树名称";
-            treeNode9.Name = "";
-            treeNode9.Tag = "0";
-            treeNode9.Text = "树名称";
-            treeNode10.Name = "";
-            treeNode10.Tag = "0";
-            treeNode10.Text = "树名称";
-            treeNode11.Name = "";
-            treeNode11.Tag = "0";
-            treeNode11.Text = "树名称";
-            treeNode12.Name = "";
-            treeNode12.Tag = "0";
-            treeNode12.Text = "树名称";
-            treeNode13.Name = "";
-            treeNode13.Tag = "0";
-            treeNode13.Text = "树名称";
-            treeNode14.Name = "";
-            treeNode14.Tag = "0";
-            treeNode14.Text = "树名称";
-            treeNode15.Name = "";
-            treeNode15.Tag = "0";
-            treeNode15.Text = "树名称";
-            treeNode16.Name = "";
-            treeNode16.Tag = "0";
-            treeNode16.Text = "树名称";
-            treeNode17.Name = "";
-            treeNode17.Tag = "0";
-            treeNode17.Text = "树名称";
-            treeNode18.Name = "";
-            treeNode18.Tag = "0";
-            treeNode18.Text = "树名称";
-            treeNode19.Name = "";
-            treeNode19.Tag = "0";
-            treeNode19.Text = "树名称";
-            treeNode20.Name = "";
-            treeNode20.Tag = "0";
-            treeNode20.Text = "树名称";
-            treeNode21.Name = "";
-            treeNode21.Tag = "0";
-            treeNode21.Text = "树名称";
-            treeNode22.Name = "";
-            treeNode22.Tag = "0";
-            treeNode22.Text = "树名称";
-            treeNode23.Name = "";
-            treeNode23.Tag = "0";
-            treeNode23.Text = "树名称";
-            treeNode24.Name = "";
-            treeNode24.Tag = "0";
-            treeNode24.Text = "树名称";
-            treeNode25.Name = "";
-            treeNode25.Tag = "0";
-            treeNode25.Text = "树名称";
-            treeNode26.Name = "";
-            treeNode26.Tag = "0";
-            treeNode26.Text = "树名称";
-            treeNode27.Name = "";
-            treeNode27.Tag = "0";
-            treeNode27.Text = "树名称";
-            treeNode28.Name = "";
-            treeNode28.Tag = "0";
-            treeNode28.Text = "树名称";
-            treeNode29.Name = "";
-            treeNode29.Tag = "0";
-            treeNode29.Text = "树名称";
-            treeNode30.Name = "";
-            treeNode30.Tag = "0";
-            treeNode30.Text = "树名称";
-            treeNode31.Name = "";
-            treeNode31.Tag = "0";
-            treeNode31.Text = "树名称";
-            treeNode32.Name = "";
-            treeNode32.Tag = "0";
-            treeNode32.Text = "树名称";
-            treeNode33.Name = "";
-            treeNode33.Tag = "0";
-            treeNode33.Text = "树名称";
-            treeNode34.Name = "";
-            treeNode34.Tag = "0";
-            treeNode34.Text = "树名称";
-            treeNode35.Name = "";
-            treeNode35.Tag = "0";
-            treeNode35.Text = "树名称";
-            treeNode36.Name = "";
-            treeNode36.Tag = "0";
-            treeNode36.Text = "树名称";
+            treeNode37.Name = "";
+            treeNode37.Tag = "0";
+            treeNode37.Text = "树名称";
+            treeNode38.Name = "";
+            treeNode38.Tag = "0";
+            treeNode38.Text = "树名称";
+            treeNode39.Name = "";
+            treeNode39.Tag = "0";
+            treeNode39.Text = "树名称";
+            treeNode40.Name = "";
+            treeNode40.Tag = "0";
+            treeNode40.Text = "树名称";
+            treeNode41.Name = "";
+            treeNode41.Tag = "0";
+            treeNode41.Text = "树名称";
+            treeNode42.Name = "";
+            treeNode42.Tag = "0";
+            treeNode42.Text = "树名称";
+            treeNode43.Name = "";
+            treeNode43.Tag = "0";
+            treeNode43.Text = "树名称";
+            treeNode44.Name = "";
+            treeNode44.Tag = "0";
+            treeNode44.Text = "树名称";
+            treeNode45.Name = "";
+            treeNode45.Tag = "0";
+            treeNode45.Text = "树名称";
+            treeNode46.Name = "";
+            treeNode46.Tag = "0";
+            treeNode46.Text = "树名称";
+            treeNode47.Name = "";
+            treeNode47.Tag = "0";
+            treeNode47.Text = "树名称";
+            treeNode48.Name = "";
+            treeNode48.Tag = "0";
+            treeNode48.Text = "树名称";
+            treeNode49.Name = "";
+            treeNode49.Tag = "0";
+            treeNode49.Text = "树名称";
+            treeNode50.Name = "";
+            treeNode50.Tag = "0";
+            treeNode50.Text = "树名称";
+            treeNode51.Name = "";
+            treeNode51.Tag = "0";
+            treeNode51.Text = "树名称";
+            treeNode52.Name = "";
+            treeNode52.Tag = "0";
+            treeNode52.Text = "树名称";
+            treeNode53.Name = "";
+            treeNode53.Tag = "0";
+            treeNode53.Text = "树名称";
+            treeNode54.Name = "";
+            treeNode54.Tag = "0";
+            treeNode54.Text = "树名称";
+            treeNode55.Name = "";
+            treeNode55.Tag = "0";
+            treeNode55.Text = "树名称";
+            treeNode56.Name = "";
+            treeNode56.Tag = "0";
+            treeNode56.Text = "树名称";
+            treeNode57.Name = "";
+            treeNode57.Tag = "0";
+            treeNode57.Text = "树名称";
+            treeNode58.Name = "";
+            treeNode58.Tag = "0";
+            treeNode58.Text = "树名称";
+            treeNode59.Name = "";
+            treeNode59.Tag = "0";
+            treeNode59.Text = "树名称";
+            treeNode60.Name = "";
+            treeNode60.Tag = "0";
+            treeNode60.Text = "树名称";
+            treeNode61.Name = "";
+            treeNode61.Tag = "0";
+            treeNode61.Text = "树名称";
+            treeNode62.Name = "";
+            treeNode62.Tag = "0";
+            treeNode62.Text = "树名称";
+            treeNode63.Name = "";
+            treeNode63.Tag = "0";
+            treeNode63.Text = "树名称";
+            treeNode64.Name = "";
+            treeNode64.Tag = "0";
+            treeNode64.Text = "树名称";
+            treeNode65.Name = "";
+            treeNode65.Tag = "0";
+            treeNode65.Text = "树名称";
+            treeNode66.Name = "";
+            treeNode66.Tag = "0";
+            treeNode66.Text = "树名称";
+            treeNode67.Name = "";
+            treeNode67.Tag = "0";
+            treeNode67.Text = "树名称";
+            treeNode68.Name = "";
+            treeNode68.Tag = "0";
+            treeNode68.Text = "树名称";
+            treeNode69.Name = "";
+            treeNode69.Tag = "0";
+            treeNode69.Text = "树名称";
+            treeNode70.Name = "";
+            treeNode70.Tag = "0";
+            treeNode70.Text = "树名称";
+            treeNode71.Name = "";
+            treeNode71.Tag = "0";
+            treeNode71.Text = "树名称";
+            treeNode72.Name = "";
+            treeNode72.Tag = "0";
+            treeNode72.Text = "树名称";
             this.myEditTreeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26,
-            treeNode27,
-            treeNode28,
-            treeNode29,
-            treeNode30,
-            treeNode31,
-            treeNode32,
-            treeNode33,
-            treeNode34,
-            treeNode35,
-            treeNode36});
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45,
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49,
+            treeNode50,
+            treeNode51,
+            treeNode52,
+            treeNode53,
+            treeNode54,
+            treeNode55,
+            treeNode56,
+            treeNode57,
+            treeNode58,
+            treeNode59,
+            treeNode60,
+            treeNode61,
+            treeNode62,
+            treeNode63,
+            treeNode64,
+            treeNode65,
+            treeNode66,
+            treeNode67,
+            treeNode68,
+            treeNode69,
+            treeNode70,
+            treeNode71,
+            treeNode72});
             this.myEditTreeView1.RegexDesc = "";
             this.myEditTreeView1.RegexRule = "";
             this.myEditTreeView1.ShowField = "F_PROTYPE";
@@ -547,6 +531,52 @@
             this.myEditTextBox1.TableName = null;
             this.myEditTextBox1.Visible = false;
             // 
+            // myUserName
+            // 
+            this.myUserName.Datarow = null;
+            this.myUserName.EditField = "f_createname";
+            this.myUserName.EditFieldType = System.Data.SqlDbType.VarChar;
+            this.myUserName.FieldMaxLength = 0;
+            this.myUserName.FieldMinLength = 0;
+            this.myUserName.FieldValue = "";
+            this.myUserName.iapplication = null;
+            this.myUserName.IsCanEdit = false;
+            this.myUserName.IsIdentified = false;
+            this.myUserName.IsKeyField = false;
+            this.myUserName.IsValid = true;
+            this.myUserName.Location = new System.Drawing.Point(426, 9);
+            this.myUserName.Name = "myUserName";
+            this.myUserName.RegexDesc = "";
+            this.myUserName.RegexRule = "";
+            this.myUserName.ShowField = "f_createname";
+            this.myUserName.ShowFieldValue = null;
+            this.myUserName.Size = new System.Drawing.Size(100, 21);
+            this.myUserName.TabIndex = 78;
+            this.myUserName.TableName = null;
+            // 
+            // myUserAgency
+            // 
+            this.myUserAgency.Datarow = null;
+            this.myUserAgency.EditField = "f_createagency";
+            this.myUserAgency.EditFieldType = System.Data.SqlDbType.VarChar;
+            this.myUserAgency.FieldMaxLength = 0;
+            this.myUserAgency.FieldMinLength = 0;
+            this.myUserAgency.FieldValue = "";
+            this.myUserAgency.iapplication = null;
+            this.myUserAgency.IsCanEdit = false;
+            this.myUserAgency.IsIdentified = false;
+            this.myUserAgency.IsKeyField = false;
+            this.myUserAgency.IsValid = true;
+            this.myUserAgency.Location = new System.Drawing.Point(573, 9);
+            this.myUserAgency.Name = "myUserAgency";
+            this.myUserAgency.RegexDesc = "";
+            this.myUserAgency.RegexRule = "";
+            this.myUserAgency.ShowField = "f_createagency";
+            this.myUserAgency.ShowFieldValue = null;
+            this.myUserAgency.Size = new System.Drawing.Size(100, 21);
+            this.myUserAgency.TabIndex = 79;
+            this.myUserAgency.TableName = null;
+            // 
             // FormCreateOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -567,8 +597,6 @@
         private System.Windows.Forms.Button butOk;
         private System.Windows.Forms.Button butClear;
         private System.Windows.Forms.Button butCancel;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private Rock.Interface.MyEditTextBox myEditTextBox2;
         private Rock.Interface.MyEditTextBox myOrderNumber;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -583,5 +611,7 @@
         private System.Windows.Forms.Label lblDept;
         private System.Windows.Forms.Label label2;
         private Rock.Interface.MyEditTextBox myEditTextBox1;
+        private Rock.Interface.MyEditTextBox myUserAgency;
+        private Rock.Interface.MyEditTextBox myUserName;
     }
 }

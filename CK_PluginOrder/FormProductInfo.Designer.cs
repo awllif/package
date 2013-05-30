@@ -711,6 +711,7 @@
             this.myEditTextBox20.Size = new System.Drawing.Size(305, 21);
             this.myEditTextBox20.TabIndex = 10;
             this.myEditTextBox20.TableName = null;
+            this.myEditTextBox20.TextChanged += new System.EventHandler(this.myEditTextBox20_TextChanged);
             // 
             // myEditImageElement1
             // 

@@ -26,7 +26,7 @@ namespace CK_PluginOrder
             //注册功能按钮
             Command cmdAdd = new Command("创建订单", iapplication, CommandTriger.OFF, (int)ImageType.ADD);
             Command cmdEdit = new Command("订单编辑", iapplication, CommandTriger.ON, (int)ImageType.EDIT);
-            Command cmdDetail = new Command("订单详情", iapplication, CommandTriger.ON, (int)ImageType.PRINT01);
+            Command cmdDetail = new Command("订单打印", iapplication, CommandTriger.ON, (int)ImageType.PRINT01);
             // Command cmdPrint = new Command("人员查看", iapplication, CommandTriger.ON, (int)ImageType.PRINT02);
             cmdAdd.Click += new EventHandler(cmdAdd_Click);
             cmdEdit.Click += new EventHandler(cmdEdit_Click);
@@ -68,7 +68,7 @@ namespace CK_PluginOrder
             FormCreateOrder FCO = new FormCreateOrder(iapplication,idataservice);
             IRight ir = (IRight)iapplication.GetService(typeof(IRight));
             FCO.RegStatickElement("F_CREATEUSER", System.Data.SqlDbType.Int, ir.UserId);
-            FCO.RegStatickElement("F_CREATEAGENCY", System.Data.SqlDbType.Int, ir.AgencyId);
+            //FCO.RegStatickElement("F_CREATEAGENCY", System.Data.SqlDbType.Int, ir.AgencyId);
            // FCO.RegStatickElement("F_CREATENAME", System.Data.SqlDbType.VarChar, ir.UserName);
            // FCO.RegStatickElement("F_CREATEAGENCY", System.Data.SqlDbType.VarChar, ir.AgencyName);
             FCO.ShowForm(FormType.Insert);

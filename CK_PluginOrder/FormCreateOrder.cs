@@ -22,8 +22,8 @@ namespace CK_PluginOrder
         public override void AfterShowForm()
         {
             IRight ir = (IRight)iapplication.GetService(typeof(IRight));
-            textBox1.Text = ir.UserName;
-            textBox2.Text = ir.AgencyName;
+            myUserName.Text = ir.UserName;
+            myUserAgency.Text = ir.AgencyName;
             myOrderNumber.FieldValue = "CG" + ir.UserId + DateTime.Now.ToString("yyMMddhhmmss");
             myEditTreeView1.MyItemCheck += new EventHandler(myEditTreeView1_MyItemCheck);
             listView1.Columns.Add("商品ID", 60, HorizontalAlignment.Left);
@@ -51,7 +51,6 @@ namespace CK_PluginOrder
         {
 
         }
-
 
         private void butOk_Click(object sender, EventArgs e)
         {

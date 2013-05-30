@@ -76,5 +76,10 @@ namespace CK_PluginOrder
         {
             this.textBox2.Text = (Int32.Parse(textBox1.Text) * Int32.Parse(myEditTextBox12.FieldValue.ToString())).ToString();
         }
+
+        private void myEditTextBox20_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
