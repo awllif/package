@@ -29,8 +29,8 @@ namespace CK_PluginBaseData
         {
             lblType.Text = (string)sender;
             String[] codeName=myEditTreeView1.ShowFieldValue.ToString().Split('-');
-            this.myEditTextBox2.FieldValue=codeName[0];
-            this.myEditTextBox3.FieldValue=codeName[1];
+            //this.myEditTextBox2.FieldValue=codeName[0];
+            //this.myEditTextBox3.FieldValue=codeName[1];
             //this.myEditTextBox4.FieldValue = myEditTreeView1.FieldValue;
 
         }
