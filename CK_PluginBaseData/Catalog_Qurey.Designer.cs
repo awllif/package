@@ -42,7 +42,7 @@ namespace CK_PluginBaseData
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 35);
+            this.label1.Location = new System.Drawing.Point(11, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 1;
@@ -51,7 +51,7 @@ namespace CK_PluginBaseData
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(272, 35);
+            this.label2.Location = new System.Drawing.Point(195, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 3;
@@ -60,7 +60,7 @@ namespace CK_PluginBaseData
             // queryElement2
             // 
             this.queryElement2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement2.Location = new System.Drawing.Point(331, 31);
+            this.queryElement2.Location = new System.Drawing.Point(230, 14);
             this.queryElement2.Name = "queryElement2";
             this.queryElement2.QActived = false;
             this.queryElement2.QField = "F_CODE";
@@ -73,7 +73,7 @@ namespace CK_PluginBaseData
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 73);
+            this.label3.Location = new System.Drawing.Point(335, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 5;
@@ -82,7 +82,7 @@ namespace CK_PluginBaseData
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(272, 73);
+            this.label4.Location = new System.Drawing.Point(516, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 12);
             this.label4.TabIndex = 7;
@@ -91,7 +91,7 @@ namespace CK_PluginBaseData
             // queryElement1
             // 
             this.queryElement1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement1.Location = new System.Drawing.Point(331, 69);
+            this.queryElement1.Location = new System.Drawing.Point(551, 14);
             this.queryElement1.Name = "queryElement1";
             this.queryElement1.QActived = false;
             this.queryElement1.QField = "F_STYLE";
@@ -104,7 +104,7 @@ namespace CK_PluginBaseData
             // queryElement4
             // 
             this.queryElement4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement4.Location = new System.Drawing.Point(54, 31);
+            this.queryElement4.Location = new System.Drawing.Point(46, 14);
             this.queryElement4.Name = "queryElement4";
             this.queryElement4.QActived = false;
             this.queryElement4.QField = "F_NAME";
@@ -117,7 +117,7 @@ namespace CK_PluginBaseData
             // queryElement3
             // 
             this.queryElement3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement3.Location = new System.Drawing.Point(54, 70);
+            this.queryElement3.Location = new System.Drawing.Point(370, 14);
             this.queryElement3.Name = "queryElement3";
             this.queryElement3.QActived = false;
             this.queryElement3.QField = "F_TYPE";
@@ -127,7 +127,7 @@ namespace CK_PluginBaseData
             this.queryElement3.Size = new System.Drawing.Size(140, 21);
             this.queryElement3.TabIndex = 4;
             // 
-            // CatalogType_Qurey
+            // Catalog_Qurey
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -139,8 +139,8 @@ namespace CK_PluginBaseData
             this.Controls.Add(this.label2);
             this.Controls.Add(this.queryElement2);
             this.Controls.Add(this.label1);
-            this.Name = "CatalogType_Qurey";
-            this.Size = new System.Drawing.Size(553, 100);
+            this.Name = "Catalog_Qurey";
+            this.Size = new System.Drawing.Size(879, 55);
             this.ResumeLayout(false);
             this.PerformLayout();
 

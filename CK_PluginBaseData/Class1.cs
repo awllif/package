@@ -39,7 +39,7 @@ namespace CK_PluginBaseData
             //            new object[]{ "F_StateName","发布",Color.Green}});
 
             ////分组
-            //this.RegGroup(new object[] { "F_EventName" });
+            this.RegGroup(new object[] { "f_pname" });
         }
         void cmdPrint_Click(object sender, EventArgs e)
         {
