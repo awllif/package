@@ -43,7 +43,7 @@ namespace CK_PluginBaseData
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 35);
+            this.label1.Location = new System.Drawing.Point(20, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 1;
@@ -52,7 +52,7 @@ namespace CK_PluginBaseData
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(272, 35);
+            this.label2.Location = new System.Drawing.Point(182, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 3;
@@ -61,20 +61,20 @@ namespace CK_PluginBaseData
             // queryElement2
             // 
             this.queryElement2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement2.Location = new System.Drawing.Point(319, 32);
+            this.queryElement2.Location = new System.Drawing.Point(229, 11);
             this.queryElement2.Name = "queryElement2";
             this.queryElement2.QActived = false;
             this.queryElement2.QField = "F_NAME";
             this.queryElement2.QFieldType = System.Data.SqlDbType.VarChar;
             this.queryElement2.QType = Rock.Interface.QueryType.Include;
             this.queryElement2.QValue = "";
-            this.queryElement2.Size = new System.Drawing.Size(152, 21);
+            this.queryElement2.Size = new System.Drawing.Size(104, 21);
             this.queryElement2.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 73);
+            this.label3.Location = new System.Drawing.Point(344, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 5;
@@ -83,7 +83,7 @@ namespace CK_PluginBaseData
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(272, 70);
+            this.label4.Location = new System.Drawing.Point(537, 14);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 8;
@@ -92,7 +92,7 @@ namespace CK_PluginBaseData
             // queryElement1
             // 
             this.queryElement1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement1.Location = new System.Drawing.Point(319, 67);
+            this.queryElement1.Location = new System.Drawing.Point(584, 11);
             this.queryElement1.Name = "queryElement1";
             this.queryElement1.QActived = false;
             this.queryElement1.QField = "F_PEOPLE";
@@ -105,14 +105,14 @@ namespace CK_PluginBaseData
             // queryElement4
             // 
             this.queryElement4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.queryElement4.Location = new System.Drawing.Point(78, 32);
+            this.queryElement4.Location = new System.Drawing.Point(91, 11);
             this.queryElement4.Name = "queryElement4";
             this.queryElement4.QActived = false;
             this.queryElement4.QField = "F_CODE";
             this.queryElement4.QFieldType = System.Data.SqlDbType.VarChar;
             this.queryElement4.QType = Rock.Interface.QueryType.Include;
             this.queryElement4.QValue = "";
-            this.queryElement4.Size = new System.Drawing.Size(140, 21);
+            this.queryElement4.Size = new System.Drawing.Size(81, 21);
             this.queryElement4.TabIndex = 9;
             // 
             // queryComboBox1
@@ -131,7 +131,7 @@ namespace CK_PluginBaseData
             this.queryComboBox1.IsKeyField = false;
             this.queryComboBox1.IsValid = true;
             this.queryComboBox1.ItemsSql = "SELECT F_VALUE AS F_TYPE,F_NAME FROM T_BASE_DICT WHERE F_CODE=\'CM_TYPE\'";
-            this.queryComboBox1.Location = new System.Drawing.Point(78, 70);
+            this.queryComboBox1.Location = new System.Drawing.Point(403, 11);
             this.queryComboBox1.Name = "queryComboBox1";
             this.queryComboBox1.QActived = false;
             this.queryComboBox1.QField = "F_TYPE";
@@ -142,7 +142,7 @@ namespace CK_PluginBaseData
             this.queryComboBox1.RegexRule = "";
             this.queryComboBox1.ShowField = "F_NAME";
             this.queryComboBox1.ShowFieldValue = "";
-            this.queryComboBox1.Size = new System.Drawing.Size(140, 20);
+            this.queryComboBox1.Size = new System.Drawing.Size(117, 20);
             this.queryComboBox1.TabIndex = 10;
             this.queryComboBox1.TableName = "";
             this.queryComboBox1.Text = "请选择......";
@@ -160,7 +160,7 @@ namespace CK_PluginBaseData
             this.Controls.Add(this.queryElement2);
             this.Controls.Add(this.label1);
             this.Name = "CatalogCompany_Qurey";
-            this.Size = new System.Drawing.Size(553, 100);
+            this.Size = new System.Drawing.Size(750, 54);
             this.ResumeLayout(false);
             this.PerformLayout();
 
