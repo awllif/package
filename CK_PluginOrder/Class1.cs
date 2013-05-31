@@ -122,7 +122,7 @@ namespace CK_PluginOrder
         {
           //查看采购单明细,设置采购单属性到下个审批人或者回退到创建人,如果没有下个审批人.更新采购单状态都审批通过.
             IReport Ir = (IReport)iapplication.GetService(typeof(IReport));
-            IDataService idataSvr = (IDataService)iapplication.GetService(typeof(IDataService));
+            IDataService idataSvr = idataservice;
             IAdapter Iad = (IAdapter)iapplication.GetService(typeof(IAdapter));
             string ReportTemple = (string)Iad.RunCmdnoCheck("AFunction3", new Object[] { "c0d8b9fa-2b7c-4357-a650-dea950413736" });//报表模板
             MessageBox.Show(idataSvr.SelectedRows.Count.ToString());
